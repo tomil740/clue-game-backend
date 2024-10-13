@@ -9,10 +9,12 @@ app.get('/people/:personId', (req, res) => {
     const people = fns.getLoadedData("people");
     for (const person of people) {
         if (person.id === req.personId) {
-            return person;
+            res.json({ person });
+            return;
         }
     }
-    return false;
+    res.json({ person: false });
+    return;
 });
 
 app.get('/people', (req, res) => {
@@ -28,10 +30,12 @@ app.get('/room/:roomId', (req, res) => {
     const rooms = fns.getLoadedData("rooms");
     for (const room of rooms) {
         if (room.id === req.roomId) {
-            return room;
+            res.json({ room });
+            return;
         }
     }
-    return false;
+    res.json({ room: false });
+    return;;
 });
 
 app.get('/weapons', (req, res) => {

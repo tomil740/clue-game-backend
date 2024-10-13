@@ -25,9 +25,9 @@ const getLoadedData = (data) => {
         case "people":
             return people;
         case "rooms":
-            return people;
+            return rooms;
         case "weapons":
-            return people;
+            return weapons;
         case "murderDetails":
             return murderDetails;
         case "peopleHoursRoom":
