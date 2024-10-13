@@ -8,8 +8,8 @@ app.use(express.json());
 app.get('/people/:personId', (req, res) => {
     const people = fns.getLoadedData("people");
     for (const person of people) {
-        if (people.id === req.personId) {
-            return people;
+        if (person.id === req.personId) {
+            return person;
         }
     }
     return false;
