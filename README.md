@@ -35,12 +35,15 @@ The rest of the game tasks take place on the client side. You need to support th
 - Display the results in the UI.
 
 ### 2. Ask a Question
-- From a dropdown list, select one of the available people (retrieve using `/people` endpoint).
-- Select an hour (input, focus only on the hour, not minutes).
-- Clicking a button will send a request to `/question/:personId` with the hour included in the request body.
-- Use the room ID from the response to send another request to `/room/:roomId` to get the list of items inside the room.
-- Additionally, send a request for the victim (ID: 12) at the same hour to check if the victim was in the same room.
-- Display the results in the UI, showing whether the victim was in the same room or not.
+- The point of asking a question is to find: wether person X and the victim shared a room at the same time, and does the room has any weapons inside.
+- if there are - there is a good chance that this is the solution to the murder.
+- you get this info with:
+    - From a dropdown list, select one of the available people (retrieve using `/people` endpoint).
+    - Select an hour (input, focus only on the hour, not minutes).
+    - Clicking a button will send a request to `/question/:personId` with the hour included in the request body.
+    - Use the room ID from the response to send another request to `/room/:roomId` to get the list of items inside the room.
+    - Additionally, send a request for the victim (ID: 12) at the same hour to check if the victim was in the same room.
+    - Display the results in the UI, showing whether the victim was in the same room or not.
 - After each request, increment the total number of questions. If the count exceeds 5, reset it to 0 and add 1 to the total number of rounds.
 
 ### 3. Make an Accusation
