@@ -20,12 +20,12 @@ app.get('/people/:personId', (req, res) => {
 });
 
 app.get('/people', (req, res) => {
-    const people = fns.loadData('people');
+    const people = fns.getLoadedData('people');
     res.json(people);
 });
 
 app.get('/rooms', (req, res) => {
-    const rooms = fns.loadData('rooms');
+    const rooms = fns.getLoadedData('rooms');
     res.json(rooms);
 });
 app.get('/room/:roomId', (req, res) => {
