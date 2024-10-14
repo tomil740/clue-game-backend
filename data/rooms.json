@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "room_name": "The Infinite Hallway",
+        "name": "The Infinite Hallway",
         "size_sqm": 300,
         "general_items": [
             "Giant cheese wheel",
@@ -15,7 +15,7 @@
     },
     {
         "id": 2,
-        "room_name": "The Suspicious Closet",
+        "name": "The Suspicious Closet",
         "size_sqm": 5,
         "description": "A closet that occasionally makes coughing noises, even though no one is inside.",
         "general_items": [
@@ -28,7 +28,7 @@
     },
     {
         "id": 3,
-        "room_name": "The Upside-Down Library",
+        "name": "The Upside-Down Library",
         "size_sqm": 50,
         "description": "All the books are glued to the ceiling, and the floor is mysteriously sticky.",
         "general_items": [
@@ -42,7 +42,7 @@
     },
     {
         "id": 4,
-        "room_name": "The Invisible Room",
+        "name": "The Invisible Room",
         "size_sqm": 70,
         "description": "You can't see anything, but you can feel everything...especially the walls.",
         "general_items": [
@@ -55,7 +55,7 @@
     },
     {
         "id": 5,
-        "room_name": "The Square Room That’s Actually A Circle",
+        "name": "The Square Room That’s Actually A Circle",
         "size_sqm": 80,
         "description": "It looks square, but for some reason, everyone keeps walking in circles.",
         "general_items": [
