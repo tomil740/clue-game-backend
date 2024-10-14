@@ -3,7 +3,7 @@
 # Express Server API Documentation
 
 ## Base URL
-`http://localhost:3000`
+`https://clue-game-backend.onrender.com`
 
 ## Endpoints
 

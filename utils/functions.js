@@ -37,7 +37,7 @@ const getLoadedData = (data) => {
 
 // Function to generate the murder details
 const generateMurderDetails = () => {
-
+    murderDetails = {}
     let selectedPerson = getRandomElement(people);
     while (selectedPerson.id === 12) {
         selectedPerson = getRandomElement(people);
@@ -56,6 +56,7 @@ const generateMurderDetails = () => {
 };
 
 function populatePeopleHoursRoom() {
+    peopleHoursRoom = {}
     people.forEach(person => {
         peopleHoursRoom[person.id] = {};
         for (let i = 0; i < 24; i++) {
